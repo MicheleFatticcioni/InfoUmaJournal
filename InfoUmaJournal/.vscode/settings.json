@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+      // This is Default.
+      {
+        "format": "compressed",
+        "extensionName": ".css",
+        "savePath": "/css-output/"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": [
+      "sass/*[!main].scss"
+  ],
+    "liveSassCompile.settings.generateMap": true
+
+  }

@@ -1,0 +1,283 @@
+
+/* ============ ADD HERE YOUR CUSTOM SCSS or  plain CSS CODE. ============ 
+
+HOW DOES IT WORK?
+
+    Edit this file, save, 
+    view page as admin:
+    The style will be AUTOMATICALLY recompiled and 
+    your new CSS bundle will be reloaded via ajax to show 
+    the new styling edits.
+
+NOTICE for beginners: 
+
+    CODE HERE YOUR MASTERPIECE, but before that, if you haven't yet,
+    please take your time to understand and study how Bootstrap works.
+    It can save you a lot of time,
+    eg. to standardize project colors, or fully customize typography.
+    First of all, have a ride in the WordPress Customizer.
+    Then learn to use Bootstrap 4 Classes and utilities.
+    If you come from the CSS world, take some time to study the basic of SASS. It's very powerful.
+    With great powers...you are warned
+
+HOW TO REFERENCE ASSETS AND IMAGES 
+    [BREAKING NEWS] The generated CSS bundle is now called from the Theme folder 
+    so relative paths work as expected on a standard WordPress Theme.
+    So it's not like before.
+
+ 
+************************************************		*/
+//a demo statement - uncomment to see page turn red and blush
+//body { background: red; opacity: 0.3;} 
+
+//open menus on hover
+.top-bar{
+    background-color: #1D2327;
+}
+.navbar-brand{
+    .text-logo{
+        color: #33658a;
+    }
+}
+.dropdown:hover>.dropdown-menu { display: block;}
+*{
+    box-sizing: border-box;
+} 
+
+#policy{
+    padding: 0;
+}
+
+.category-label{
+    padding: 4px 10px;
+    border-radius: 4px;
+    a{
+        color: #fff;
+    }
+}
+
+.avatar{
+    width: 70%;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.avatar--small{
+    width: 70%;
+    max-width: 70px;
+}
+
+
+.hero-archive{
+    h1{
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: $primary-color!important;
+        }
+    }
+    p{
+        color: rgb(113, 128, 150);
+    }
+}
+
+.card-post{
+    transition: transform 0.3s ease-out;
+    .card-post--inner{
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 8px;
+        &:hover{
+           /* box-shadow: 0px 2px 4px rgb(46 41 51 / 8%), 0px 5px 10px rgb(71 63 79 / 16%)!important;*/
+        }
+        .card-post-image{
+            min-width: 110px;
+            width: 35%;
+            max-width: 110px;
+            iframe{
+                width: 100%;
+                height: 100%;
+                min-height: 200px;
+                max-height: 390px;
+                border-radius: 10px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+                position: relative;
+            }
+        }
+        .card-post-body{
+        padding-left: 15px;
+        }
+        .category{
+            padding: 8px 16px;
+            background-color: #bee3f8;
+            color: $primary-color;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 14px!important;
+            letter-spacing: 1px!important;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        a{
+            color: $primary-color;
+        }
+    }
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+
+.card-post--big{
+    transition: transform 0.3s ease-out;
+    height: 450px;
+    .card-post--inner{
+        border-radius: 30px;
+        height: 100%;
+        padding: 30px;
+        justify-content: flex-end;
+        h3, p, span{
+            color: #fff;
+        }
+        .post-info{
+            p, span, a{
+                color: rgb(160, 174, 192)!important;
+            }
+        }
+    }
+    &:hover{
+        transform: translateY(-10px);
+    }
+}
+.hero-view{
+    .card-post--big{    
+        .content{
+            p{
+                color: rgb(160, 174, 192)!important;
+            }
+        }    
+        &:hover{
+            transform: translateY(0);
+        }
+        .card-post--inner{
+            border-radius: 0px!important;
+        }
+    }
+}
+
+.card-post--loop{
+    .card-post--inner{
+        .card-post-image{
+            min-width: 110px;
+            width: 100%;
+            max-width: 100%;
+            img{
+                max-height: 260px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .card-post-body{
+        padding-left: 0px;
+    }
+}
+
+.my-paginations{
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 30px auto;
+    a{
+        display: inline-block;
+        padding: 10px 30px;
+        background-color: #e2e8f0;
+        border-radius: 15px;
+        color: rgb(113, 128, 150);
+        transition: 0.5s;
+        &:hover{
+            background-color: #33658a;
+            color: #fff;
+        }
+    }
+    span{
+        padding: 0 40px;
+    }
+}
+
+.job-offer{
+    .job-offer-details{
+        .col-md-3{
+            p{
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.form-contatti{
+    label{
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    .red{
+        color: red;
+    }
+    input, textarea{
+        border: 1px solid #749FCC;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 3px 10px;
+        @media screen and (max-width: 768px) {    
+            width: 100%;
+        }
+        &:focus-visible {
+            outline: none;        
+        }
+    }
+    textarea{
+        width: 100%;
+    }
+    .wpcf7-acceptance{
+        .wpcf7-list-item{
+            margin-left: 0;
+            input{
+                width: fit-content;
+            }
+        }
+    }
+}
+
+.modal-content{
+    .wpcf7{
+        width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        input[type=text], input[type=tel], input[type=email] {
+            width: 100%;
+        }
+    }
+}
+
+.form-response{
+    border: 4px solid green;
+    display: none;
+    p{
+        margin: 0;
+        padding: 10px 0;
+    }
+    &.show{
+        display: inline-block;
+    }
+}
